@@ -34,3 +34,16 @@ Build an API with a single endpoint that accepts a file upload in the CSV format
     •     Implement the project in TypeScript (especially if it’s on your resume)
     •     Provide appropriate tests ensuring the desired outcome
 
+## Design
+
+- Nodejs and express is used to build the API.
+- The configuration file is in JSON format, keyed on the provider name which maps to an array of column names.
+- A local Postgres database is used to store the data.
+- The data is stored in a single table named "Vehicles".
+- Use Sequelize ORM. While this is not needed or a single table database it makes the project extendible for adding relations. It also provides schema definition and validation.
+
+## Assumptions
+
+- The UUID column is the primary key for the Vehicles table and is never provided in a CSV. The database will handle generating the UUID fields.
+- The following fields are required: VIN, Make, Model.
+- Data providers will provide consistent column names.
