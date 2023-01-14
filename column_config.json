@@ -1,0 +1,6 @@
+{
+	"provider_all": ["VIN", "Make", "Model", "Mileage", "Year", "Price", "Zip_Code", "Create_Date", "Update_Date"],
+	"provider_subsetA": ["VIN", "Make", "Model", "Year"],
+	"provider_subsetB": ["VIN", "Make", "Model", "Year", "Mileage", "Price"],
+	"provider_minimal": ["VIN", "Make", "Model"]
+}
