@@ -98,14 +98,6 @@ const validateData = async (data) => {
     }
 }
 
-//let c = lookupColumnConfig("provider_all")
-//console.log(typeof(c))
-//console.log(c)
-//for (const r of c) {
-//    console.log(r)
-//}
-
-
 app.listen(PORT, (error) => {
     if (!error) console.log(`Server started on port ${PORT}`)
     else console.log(`Server failed to start due to error: ${error}`)
