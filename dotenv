@@ -3,3 +3,4 @@
 
 DB_CONNECTION_URL="postgres://<user>:<password>@<host>:<port>/<db_name>"
 COLUMN_CONFIG="column_config.json"
+API_PORT=3000

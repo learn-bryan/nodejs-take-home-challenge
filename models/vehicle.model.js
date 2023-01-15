@@ -13,40 +13,42 @@ const Vehicle = sequelize.define('vehicle', {
     },
     VIN: {
         type: DataTypes.STRING,
-        allowNull: true
+        allowNull: false
     },
     Make: {
         type: DataTypes.STRING,
-        allowNull: true
+        allowNull: false
     },
     Model: {
         type: DataTypes.STRING,
-        allowNull: true
+        allowNull: false
     },
     Mileage: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: true
     },
     Year: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: true
     },
     Price: {
         type: DataTypes.DECIMAL(10, 2),
-        allowNull: false
+        allowNull: true
     },
     ZipCode: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: true
     },
     CreateDate: {
         type: DataTypes.DATE,
-        defaultValue: DataTypes.NOW
+        defaultValue: DataTypes.NOW,
+        allowNull: true
     },
     UpdateDate: {
         type: DataTypes.DATE,
-        defaultValue: DataTypes.NOW
+        defaultValue: DataTypes.NOW,
+        allowNull: true
     }
 });
 
-module.exports = Vehicle;
+exports.Vehicle = Vehicle;
